@@ -1,0 +1,180 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'aileronbold';
+  src: url("../font/aileron-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'aileronlight';
+  src: url("../font/aileron-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'aileronregular';
+  src: url("../font/aileron-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'aileronsemibold';
+  src: url("../font/aileron-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'mv_boliregular';
+  src: url("../font/mvboli-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+.header {
+  background-color: #17161d;
+  padding: 1.875rem;
+  text-align: center; }
+
+.intro-top {
+  border-bottom: 0.125rem #000 solid;
+  padding-bottom: 1.875rem; }
+  .intro-top .intro-top-title {
+    font: normal 1.8125rem/1.8125rem 'aileronsemibold', 'sans-serif';
+    color: #FFF;
+    text-transform: uppercase;
+    margin-bottom: 0.625rem; }
+  .intro-top .intro-top-subtitle {
+    font: normal 1.375rem/1.375rem 'aileronsemibold', 'sans-serif';
+    color: #3680ee;
+    margin-bottom: 0.625rem; }
+  .intro-top .intro-top-contactLink {
+    font: normal 1.125rem/1.125rem 'mv_boliregular', 'serif';
+    color: #FFF; }
+
+.intro-bot {
+  border-top: 0.0625rem #2e2e2e solid;
+  padding-top: 1.25rem; }
+  .intro-bot .intro-bot-text {
+    font: normal 0.9375rem/1.5625rem 'aileronregular', 'sans-serif';
+    color: #FFF;
+    margin-bottom: 1.5625rem; }
+  .intro-bot .intro-bot-highlight {
+    font-family: 'aileronsemibold', 'sans-serif';
+    color: #3680ee; }
+  .intro-bot .intro-bot-social {
+    width: 7.1875rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+
+.intro-wrapper {
+  max-width: 36.25rem;
+  margin: 0 auto; }
+
+.trabajos {
+  background: #FFF url("../img/bg_trabajos.png") repeat-x 0 0;
+  padding: 3.125rem 1.25rem 1.25rem; }
+  .trabajos .trabajos-wrapper {
+    max-width: 75rem;
+    margin: 0 auto; }
+  .trabajos .trabajos-title {
+    font: normal 1.625rem/1.625rem 'aileronbold', 'sans-serif';
+    color: #17161d;
+    text-transform: uppercase;
+    margin-bottom: 0.625rem; }
+    @media only screen and (min-width: 37.5rem) {
+      .trabajos .trabajos-title {
+        margin-bottom: 3.125rem;
+        text-align: center; } }
+  @media only screen and (min-width: 37.5rem) {
+    .trabajos .trabajos-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; } }
+
+.trabajo {
+  margin-bottom: 1.875rem; }
+  @media only screen and (min-width: 37.5rem) {
+    .trabajo {
+      width: 40%;
+      margin-bottom: 3.75rem; } }
+  .trabajo .trabajo-title {
+    font: normal 1.125rem/1.25rem 'aileronregular', 'sans-serif';
+    color: #3680ee;
+    margin-bottom: 0.625rem; }
+  .trabajo .trabajo-client {
+    font-family: 'aileronsemibold', 'sans-serif';
+    font-size: 1.375rem; }
+  .trabajo .trabajo-link {
+    color: #3680ee; }
+    .trabajo .trabajo-link:hover {
+      text-decoration: none; }
+  .trabajo .trabajo-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.9375rem; }
+  .trabajo .trabajo-subtitle {
+    font: normal 1.125rem/1.375rem 'aileronsemibold', 'sans-serif';
+    color: #17161d;
+    margin-top: 0.5rem;
+    margin-bottom: 0.3125rem; }
+  .trabajo .trabajo-tecnologies {
+    display: flex;
+    flex-wrap: wrap; }
+  .trabajo .trabajo-tecnologies-item {
+    font: normal 0.9375rem/0.9375rem 'mv_boliregular', 'serif';
+    color: #000;
+    margin-right: 0.625rem;
+    margin-bottom: 0.625rem; }
+    .trabajo .trabajo-tecnologies-item:after {
+      content: '-';
+      position: relative;
+      left: 0.3125rem; }
+    .trabajo .trabajo-tecnologies-item:last-child {
+      margin-right: 0; }
+      .trabajo .trabajo-tecnologies-item:last-child:after {
+        content: ''; }
+  .trabajo .trabajo-description {
+    font: normal 0.875rem/1.125rem 'aileronregular', 'sans-serif';
+    color: #17161d;
+    margin-bottom: 0.625rem; }
+
+/*# sourceMappingURL=main.css.map */

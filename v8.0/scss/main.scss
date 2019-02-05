@@ -1,0 +1,189 @@
+@import 'reset';
+
+@font-face {
+    font-family: 'aileronbold';
+    src: url('../font/aileron-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'aileronlight';
+    src: url('../font/aileron-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'aileronregular';
+    src: url('../font/aileron-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'aileronsemibold';
+    src: url('../font/aileron-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mv_boliregular';
+    src: url('../font/mvboli-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header{
+    background-color: #17161d;
+    padding: 1.875rem;
+    text-align: center;
+}
+
+//bloque intro-top
+.intro-top{
+    border-bottom: 0.125rem #000 solid;
+    padding-bottom: 1.875rem;
+
+    .intro-top-title{
+        font: normal 1.8125rem/1.8125rem 'aileronsemibold', 'sans-serif';
+        color: #FFF;
+        text-transform: uppercase;
+        margin-bottom: 0.625rem;
+    }
+    .intro-top-subtitle{
+        font: normal 1.375rem/1.375rem 'aileronsemibold', 'sans-serif';
+        color: #3680ee;
+        margin-bottom: 0.625rem;
+    }
+    .intro-top-contactLink{
+        font: normal 1.125rem/1.125rem 'mv_boliregular', 'serif';
+        color: #FFF
+    }
+}
+
+//bloque intro-bot
+.intro-bot{
+    border-top: 0.0625rem rgb(46, 46, 46) solid;
+    padding-top: 1.25rem;
+
+    .intro-bot-text{
+        font: normal 0.9375rem/1.5625rem 'aileronregular', 'sans-serif';
+        color: #FFF;
+        margin-bottom: 1.5625rem;
+    }
+    .intro-bot-highlight{
+        font-family: 'aileronsemibold', 'sans-serif';
+        color: #3680ee;
+    }
+    .intro-bot-social{
+        width: 7.1875rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}    
+
+.intro-wrapper{
+    max-width: 36.25rem;
+    margin: 0 auto;
+}
+
+// bloque trabajos
+.trabajos{
+    background: #FFF url('../img/bg_trabajos.png') repeat-x 0 0;
+    padding: 3.125rem 1.25rem 1.25rem;
+    
+    .trabajos-wrapper{
+        max-width: 75rem;
+        margin: 0 auto;
+    }
+    .trabajos-title{
+        font: normal 1.625rem/1.625rem 'aileronbold', 'sans-serif';
+        color: #17161d;
+        text-transform: uppercase;
+        margin-bottom: 0.625rem;
+        @media only screen and (min-width: 37.5rem) {
+            margin-bottom: 3.125rem;
+            text-align: center;   
+        }
+    }
+    .trabajos-list{
+        @media only screen and (min-width: 37.5rem) {
+            display: flex;
+            flex-wrap: wrap;   
+            justify-content: space-around; 
+        }
+    }
+}
+
+// bloque trabajo
+.trabajo{
+
+    margin-bottom: 1.875rem;
+    @media only screen and (min-width: 37.5rem) {
+        width: 40%;
+        margin-bottom: 3.75rem;    
+    }
+
+    .trabajo-title{
+        font: normal 1.125rem/1.25rem 'aileronregular', 'sans-serif';
+        color: #3680ee;
+        margin-bottom: 0.625rem;       
+    }
+    .trabajo-client{
+        font-family: 'aileronsemibold', 'sans-serif';
+        font-size: 1.375rem;
+    }
+    .trabajo-link{
+        color: #3680ee;
+
+        &:hover{
+            text-decoration: none
+        }
+    }
+    .trabajo-img{
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 0.9375rem;
+    }
+    .trabajo-subtitle{
+        font: normal 1.125rem/1.375rem 'aileronsemibold', 'sans-serif';
+        color: #17161d;
+        margin-top: 0.5rem;
+        margin-bottom: 0.3125rem;
+    }
+    .trabajo-tecnologies{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .trabajo-tecnologies-item{
+        font: normal 0.9375rem/0.9375rem 'mv_boliregular', 'serif';
+        color: #000;
+        margin-right: 0.625rem;
+        margin-bottom: 0.625rem;
+
+        &:after{
+            content: '-';
+            position: relative;
+            left: 0.3125rem;
+        }
+        &:last-child{ 
+            margin-right: 0;
+            &:after{
+                content: '';
+            }
+        }   
+    }
+    .trabajo-description{
+        font: normal 0.875rem/1.125rem 'aileronregular', 'sans-serif';
+        color: #17161d;
+        margin-bottom: 0.625rem;
+    }
+}
+
+
+

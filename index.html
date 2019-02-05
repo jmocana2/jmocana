@@ -5,146 +5,280 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>jmocana.eu Portafolio web</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="v8.0/css/main.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="intro-top">
-            <hgroup class="intro-top-group">
-                <h1 class="intro-top-title">Jmocana.eu</h1>
-                <h2 class="intro-top-subtitle">React UI Developer</h2>
-            </hgroup>
-            <address class="intro-top-contact"><a class="intro-top-contactLink" href="mailto:telecomu4@gmail.com">telecomu4@gmail.com</a></address>
+            <div class="intro-wrapper">
+                <hgroup class="intro-top-group">
+                    <h1 class="intro-top-title">Jmocana.eu</h1>
+                    <h2 class="intro-top-subtitle">React UI Developer</h2>
+                </hgroup>
+                <address class="intro-top-contact"><a class="intro-top-contactLink" href="mailto:telecomu4@gmail.com">telecomu4@gmail.com</a></address>
+            </div>
         </div>
         <div class="intro-bot">
-            <p>Lorem ipsum dolor amet Lorem ipsum dolor ametLorem ipsum dolor amet Lorem ipsum dolor amet Lorem ipsum dolor ametLorem ipsum dolor amet.</p>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="https://www.linkedin.com/in/jose-mar%C3%ADa-oca%C3%B1a-tofi%C3%B1o-2aa37928/" title="ver mí perfil de Linkedín"></a>
-                        <a href="https://github.com/jmocana2" title="ver mí código"></a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="intro-wrapper">
+                <p class="intro-bot-text">Bienvenid@ a mi portafolio, en el podréis encontrar mis últimos trabajos realizados, así como las tecnologías empleadas para el desarrollo de los mismos y una breve descripción de las tareas realizadas</p>
+                <p class="intro-bot-text">Actualmente <strong class="intro-bot-highlight">me encuentro muy focalizado en el desarrollo de interfaces gráficas UI</strong>, a través del desarrollo de <strong class="intro-bot-highlight">componentes web</strong>.</p>
+                <p class="intro-bot-text">Consigo todo esto a través del uso de las últimas tecnologías: <strong class="intro-bot-highlight">HTML5</strong>, <strong class="intro-bot-highlight">CSS3</strong>, <strong class="intro-bot-highlight">JavaScript (ES6)</strong> y <strong class="intro-bot-highlight">React</strong></p>
+                <nav class="intro-bot-social">
+                    <ul class="intro-bot-social">
+                        <li class="intro-bot-linkedin">
+                            <a href="https://www.linkedin.com/in/jose-mar%C3%ADa-oca%C3%B1a-tofi%C3%B1o-2aa37928/" title="ver mí perfil de Linkedín">
+                                <img src="v8.0/img/linkedin.png" alt="Logo de Linkedin">
+                            </a>
+                        </li>
+                        <li class="intro-bot-git">    
+                            <a href="https://github.com/jmocana2" title="ver mí código">
+                                <img src="v8.0/img/git.png" alt="Logo de GitHub">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>    
         </div>
     </header>
     <main>
-        <section>
-            <header>
-                <h1>Últimos trabajos</h1>
-                <ul>
-                    <li>
-                        <h2>Titulo del trabajo</h2>
-                        <img src="#" alt="#">
-                        <h3>Tecnologías usadas</h3>
-                        <ul>
-                            <li>HTML 5</li>
-                            <li>CSS 3</li>
-                            <li>JavaScript</li>
+        <section class="trabajos">
+            <div class="trabajos-wrapper">
+                <header>
+                    <h1 class="trabajos-title">Últimos trabajos</h1>
+                </header>    
+                <ul class="trabajos-list">
+                    <li class="trabajo">
+                        <h2 class="trabajo-title"><span class="trabajo-client">Atresmedia</span> | Intranet del grupo</h2>
+                        <img class="trabajo-img" src="v8.0/img/trabajos/intranet.jpg" alt="Pantallazo del proyecto Intranet">
+                        <p class="trabajo-description">Desarrollo de librerías de componentes web alojados en npm privado (Sinopia) para su uso transversal en los múltiples servicios de la intranet de Atresmedia ( Paquetería, RRHH, Viajes, etc).</p>
+                        <p class="trabajo-description">Desarrollo de los servicios de la Intranet, haciendo uso del UI KIT de componentes core desarrollado con anterioridad para un desarrollo más ágil.</p>
+                        <h3 class="trabajo-subtitle">Funciones</h3>
+                        <p class="trabajo-description">React UI Developer</p>
+                        <h3 class="trabajo-subtitle">Tecnologías usadas</h3>
+                        <ul class="trabajo-tecnologies">
+                            <li class="trabajo-tecnologies-item">HTML 5</li>
+                            <li class="trabajo-tecnologies-item">CSS 3</li>
+                            <li class="trabajo-tecnologies-item">JavaScript</li>
+                            <li class="trabajo-tecnologies-item">React</li>
+                            <li class="trabajo-tecnologies-item">Styled Components (CSS in JS)</li>
+                            <li class="trabajo-tecnologies-item">Git</li>
                         </ul>
-                        <p>Lorem ipsum dolor amet Lorem ipsum dolor ametLorem ipsum dolor amet Lorem ipsum dolor amet Lorem ipsum dolor ametLorem ipsum dolor amet.</p>
+                        <h3 class="trabajo-subtitle">Herramientas usadas</h3>
+                        <ul class="trabajo-tecnologies">
+                            <li class="trabajo-tecnologies-item">Visual Studio Code</li>
+                            <li class="trabajo-tecnologies-item">Sketch</li>
+                            <li class="trabajo-tecnologies-item">Jira</li>
+                            <li class="trabajo-tecnologies-item">Confluence</li>
+                            <li class="trabajo-tecnologies-item">Git Lab</li>
+                            <li class="trabajo-tecnologies-item">Slack</li>
+                            <li class="trabajo-tecnologies-item">Storybook</li>
+                            <li class="trabajo-tecnologies-item">Sourcetree - Consola Git</li>
+                        </ul>
+                        <h3 class="trabajo-subtitle">Metodología de trabajo</h3>
+                        <p class="trabajo-description">Metodología ágil: Scrum</p>                        
                     </li>
-                    <li>
-                        <h2>Titulo del trabajo</h2>
-                        <img src="#" alt="#">
-                        <h3>Tecnologías usadas</h3>
-                        <ul>
-                            <li>HTML 5</li>
-                            <li>CSS 3</li>
-                            <li>JavaScript</li>
+                    <li class="trabajo">
+                        <h2 class="trabajo-title"><span class="trabajo-client">Atresmedia</span> | <a class="trabajo-link" href="https://www.atresplayer.com/" title="Visitar la web">Atresplayer</a></h2>
+                        <a href="https://www.atresplayer.com/"><img class="trabajo-img" src="v8.0/img/trabajos/atresplayer.jpg" alt="Pantallazo del proyecto Atresplayer"></a>
+                        <p class="trabajo-description">Desarrollo de la plataforma de vídeo de Atresmedia. Desarrollo de los componentes web que forman la UI de la web. Se hizo uso de Storybook para almacenar cada uno de los componentes web y generar una guía de estilo y documentación a la que poder acudir en cualquier momento.</p>
+                        <p class="trabajo-description">Creación de placeholders para una mejor experiencia de usuario, componentes grilla personalizados, generadores de sprites svg automáticos a través de webpack, Responsive Designe, Mobile first, etc.</p>
+                        <h3 class="trabajo-subtitle">Funciones</h3>
+                        <p class="trabajo-description">React UI Developer</p>
+                        <h3 class="trabajo-subtitle">Tecnologías usadas</h3>
+                        <ul class="trabajo-tecnologies">
+                            <li class="trabajo-tecnologies-item">HTML 5</li>
+                            <li class="trabajo-tecnologies-item">CSS 3</li>
+                            <li class="trabajo-tecnologies-item">JavaScript</li>
+                            <li class="trabajo-tecnologies-item">React</li>
+                            <li class="trabajo-tecnologies-item">Styled Components (CSS in JS)</li>
+                            <li class="trabajo-tecnologies-item">Git</li>
                         </ul>
-                        <p>Lorem ipsum dolor amet Lorem ipsum dolor ametLorem ipsum dolor amet Lorem ipsum dolor amet Lorem ipsum dolor ametLorem ipsum dolor amet.</p>
+                        <h3 class="trabajo-subtitle">Herramientas usadas</h3>
+                        <ul class="trabajo-tecnologies">
+                            <li class="trabajo-tecnologies-item">Visual Studio Code</li>
+                            <li class="trabajo-tecnologies-item">Sketch</li>
+                            <li class="trabajo-tecnologies-item">Jira</li>
+                            <li class="trabajo-tecnologies-item">Confluence</li>
+                            <li class="trabajo-tecnologies-item">Git Lab</li>
+                            <li class="trabajo-tecnologies-item">Slack</li>
+                            <li class="trabajo-tecnologies-item">Storybook</li>
+                            <li class="trabajo-tecnologies-item">Sourcetree - Consola Git</li>
+                        </ul>
+                        <h3 class="trabajo-subtitle">Metodología de trabajo</h3>
+                        <p class="trabajo-description">Metodología ágil: Scrum</p>
                     </li>
-                    <li>
-                        <h2>Titulo del trabajo</h2>
-                        <img src="#" alt="#">
-                        <h3>Tecnologías usadas</h3>
-                        <ul>
-                            <li>HTML 5</li>
-                            <li>CSS 3</li>
-                            <li>JavaScript</li>
+                    <li class="trabajo">
+                        <h2 class="trabajo-title"><span class="trabajo-client">FanOnTour</span> | <a class="trabajo-link" href="https://github.com/jmocana2/fanontour" title="Visitar la web">Repo FanOnTour</a></h2>
+                        <a href="https://github.com/jmocana2/fanontour"><img class="trabajo-img" src="v8.0/img/trabajos/fanontour.jpg" alt="Pantallazo del proyecto FanOnTour"></a>
+                        <p class="trabajo-description">Para este proyecto se me encargo el diseño del <a href="https://github.com/jmocana2/fanontour/tree/master/wireframes" title="ver wireframes">prototipado mediante Wireframes</a> de la web fanontour.com. Estudio de requisitos, targets y tecnologías requeridas. Diseño de la web con la herramienta Adobe Photoshp CS6. Maquetación y programación cliente js y jQuery. Se generó una página con toda la <a href="" title="ver HTML de la documentación">documentación</a> necesaria para la integración de la parte back con el front </p>
+                        <h3 class="trabajo-subtitle">Funciones</h3>
+                        <p class="trabajo-description">Prototipos UX, Diseño Web, Front-end Developer</p>
+                        <h3 class="trabajo-subtitle">Tecnologías usadas</h3>
+                        <ul class="trabajo-tecnologies">
+                            <li class="trabajo-tecnologies-item">HTML 5</li>
+                            <li class="trabajo-tecnologies-item">CSS 3</li>
+                            <li class="trabajo-tecnologies-item">Less</li>
+                            <li class="trabajo-tecnologies-item">Bootstrap</li>
+                            <li class="trabajo-tecnologies-item">JavaScript</li>
+                            <li class="trabajo-tecnologies-item">jQuery</li>                           
                         </ul>
-                        <p>Lorem ipsum dolor amet Lorem ipsum dolor ametLorem ipsum dolor amet Lorem ipsum dolor amet Lorem ipsum dolor ametLorem ipsum dolor amet.</p>
+                        <h3 class="trabajo-subtitle">Herramientas usadas</h3>
+                        <ul class="trabajo-tecnologies">
+                            <li class="trabajo-tecnologies-item">Sublime Text</li>
+                            <li class="trabajo-tecnologies-item">Prepros</li>
+                            <li class="trabajo-tecnologies-item">Adobe Photoshop CS6</li>
+                            <li class="trabajo-tecnologies-item">Git Hub</li>                           
+                        </ul>
+                        <h3 class="trabajo-subtitle">Metodología de trabajo</h3>
+                        <p class="trabajo-description">Metodología ágil: Kanban</p>                         
                     </li>
-                    <li>
-                        <h2>Titulo del trabajo</h2>
-                        <img src="#" alt="#">
-                        <h3>Tecnologías usadas</h3>
-                        <ul>
-                            <li>HTML 5</li>
-                            <li>CSS 3</li>
-                            <li>JavaScript</li>
+                    <li class="trabajo">
+                        <h2 class="trabajo-title"><span class="trabajo-client">El Mundo</span> | <a class="trabajo-link" href="https://www.elmundo.es/yodona.html" title="Visitar la web">Yo Dona</a></h2>
+                        <a href="https://www.elmundo.es/yodona.html" title="ir a la web"><img class="trabajo-img" src="v8.0/img/trabajos/yodona.jpg" alt="Pantallazo del proyecto Yo Dona"></a>
+                        <p class="trabajo-description">Maquetación web de la revista para la mujer Yo Dona perteneciente al diario El Mundo</p>
+                        <h3 class="trabajo-subtitle">Funciones</h3>
+                        <p class="trabajo-description">Maquetación web</p>
+                        <h3 class="trabajo-subtitle">Tecnologías usadas</h3>
+                        <ul class="trabajo-tecnologies">
+                            <li class="trabajo-tecnologies-item">HTML 5</li>
+                            <li class="trabajo-tecnologies-item">CSS 3</li>                            
                         </ul>
-                        <p>Lorem ipsum dolor amet Lorem ipsum dolor ametLorem ipsum dolor amet Lorem ipsum dolor amet Lorem ipsum dolor ametLorem ipsum dolor amet.</p>
+                        <h3 class="trabajo-subtitle">Herramientas usadas</h3>
+                        <ul class="trabajo-tecnologies">
+                            <li class="trabajo-tecnologies-item">Sublime Text</li>
+                            <li class="trabajo-tecnologies-item">CMS El Mundo</li>
+                            <li class="trabajo-tecnologies-item">Git</li> 
+                            <li class="trabajo-tecnologies-item">Jenkins</li>                                                     
+                        </ul>
+                        <h3 class="trabajo-subtitle">Metodología de trabajo</h3>
+                        <p class="trabajo-description">Metodología ágil: Scrum</p>                        
                     </li>
-                    <li>
-                        <h2>Titulo del trabajo</h2>
-                        <img src="#" alt="#">
-                        <h3>Tecnologías usadas</h3>
-                        <ul>
-                            <li>HTML 5</li>
-                            <li>CSS 3</li>
-                            <li>JavaScript</li>
+                    <li class="trabajo">
+                        <h2 class="trabajo-title"><span class="trabajo-client">El Mundo</span> | <a class="trabajo-link" href="https://elpais.com/elpais/icon.html" title="Visitar la web">Icon</a></h2>
+                        <a href="https://www.elmundo.es/yodona.html" title="ir a la web"><img class="trabajo-img" src="v8.0/img/trabajos/icon.jpg" alt="Pantallazo del proyecto Icon"></a>
+                        <p class="trabajo-description">Maquetación web de la revista masculina Icon perteneciente al diario El Mundo</p>
+                        <h3 class="trabajo-subtitle">Funciones</h3>
+                        <p class="trabajo-description">Maquetación web</p>
+                        <h3 class="trabajo-subtitle">Tecnologías usadas</h3>
+                        <ul class="trabajo-tecnologies">
+                            <li class="trabajo-tecnologies-item">HTML 5</li>
+                            <li class="trabajo-tecnologies-item">CSS 3</li>                            
                         </ul>
-                        <p>Lorem ipsum dolor amet Lorem ipsum dolor ametLorem ipsum dolor amet Lorem ipsum dolor amet Lorem ipsum dolor ametLorem ipsum dolor amet.</p>
+                        <h3 class="trabajo-subtitle">Herramientas usadas</h3>
+                        <ul class="trabajo-tecnologies">
+                            <li class="trabajo-tecnologies-item">Sublime Text</li>
+                            <li class="trabajo-tecnologies-item">CMS El Mundo</li>
+                            <li class="trabajo-tecnologies-item">Git</li> 
+                            <li class="trabajo-tecnologies-item">Jenkins</li>                                                     
+                        </ul>
+                        <h3 class="trabajo-subtitle">Metodología de trabajo</h3>
+                        <p class="trabajo-description">Metodología ágil: Scrum</p>                        
                     </li>
-                    <li>
-                        <h2>Titulo del trabajo</h2>
-                        <img src="#" alt="#">
-                        <h3>Tecnologías usadas</h3>
-                        <ul>
-                            <li>HTML 5</li>
-                            <li>CSS 3</li>
-                            <li>JavaScript</li>
+                    <li class="trabajo">
+                        <h2 class="trabajo-title"><span class="trabajo-client">BKOOL</span> | <a class="trabajo-link" href="https://www.bkool.com/es-ES" title="Visitar la web">web BKOOL</a></h2>
+                        <a href="https://www.bkool.com/es-ES"><img class="trabajo-img" src="v8.0/img/trabajos/bkool.jpg" alt="Pantallazo del proyecto BKOOL"></a>
+                        <p class="trabajo-description">Maquetación de web para rodillos para bicicletas BKOOL. Para el desarrollo de este proyecto se utilizó el framework Bootstrap y la librería jQuery.</p>
+                        <h3 class="trabajo-subtitle">Funciones</h3>
+                        <p class="trabajo-description">Maquetación web</p>
+                        <h3 class="trabajo-subtitle">Tecnologías usadas</h3>
+                        <ul class="trabajo-tecnologies">
+                            <li class="trabajo-tecnologies-item">HTML 5</li>
+                            <li class="trabajo-tecnologies-item">CSS 3</li>
+                            <li class="trabajo-tecnologies-item">Sass</li>
+                            <li class="trabajo-tecnologies-item">Bootstrap</li>
+                            <li class="trabajo-tecnologies-item">JavaScript</li>
+                            <li class="trabajo-tecnologies-item">jQuery</li>                           
                         </ul>
-                        <p>Lorem ipsum dolor amet Lorem ipsum dolor ametLorem ipsum dolor amet Lorem ipsum dolor amet Lorem ipsum dolor ametLorem ipsum dolor amet.</p>
+                        <h3 class="trabajo-subtitle">Herramientas usadas</h3>
+                        <ul class="trabajo-tecnologies">
+                            <li class="trabajo-tecnologies-item">Sublime Text</li>
+                            <li class="trabajo-tecnologies-item">Adobe Fireworks</li>
+                            <li class="trabajo-tecnologies-item">Subversion</li>                           
+                        </ul> 
+                        <h3 class="trabajo-subtitle">Metodología de trabajo</h3>
+                        <p class="trabajo-description">Metodología ágil: Kanban</p>                       
                     </li>
-                    <li>
-                        <h2>Titulo del trabajo</h2>
-                        <img src="#" alt="#">
-                        <h3>Tecnologías usadas</h3>
-                        <ul>
-                            <li>HTML 5</li>
-                            <li>CSS 3</li>
-                            <li>JavaScript</li>
+                    <li class="trabajo">
+                        <h2 class="trabajo-title"><span class="trabajo-client">Grupo Alares</span> | <a class="trabajo-link" href="https://www.alares.es/" title="Visitar la web">Alares</a></h2>
+                        <a href="https://www.alares.es/"><img class="trabajo-img" src="v8.0/img/trabajos/alares.jpg" alt="Pantallazo del proyecto Alares"></a>
+                        <p class="trabajo-description">Maquetación de la web de asistencia personal y familiar: Alares. Para este proyecto cabe destacar el uso del CMS openSource Wordpress.</p>
+                        <p class="trabajo-description">A partir de Wordpress se tuvo que generar el tema solicitado por el cliente, páginas con sus respectivos módulos PHP y un blog.</p>
+                        <h3 class="trabajo-subtitle">Funciones</h3>
+                        <p class="trabajo-description">Maquetación web</p>
+                        <h3 class="trabajo-subtitle">Tecnologías usadas</h3>
+                        <ul class="trabajo-tecnologies">
+                            <li class="trabajo-tecnologies-item">HTML 5</li>
+                            <li class="trabajo-tecnologies-item">CSS 3</li>
+                            <li class="trabajo-tecnologies-item">PHP</li>                                                    
                         </ul>
-                        <p>Lorem ipsum dolor amet Lorem ipsum dolor ametLorem ipsum dolor amet Lorem ipsum dolor amet Lorem ipsum dolor ametLorem ipsum dolor amet.</p>
+                        <h3 class="trabajo-subtitle">Herramientas usadas</h3>
+                        <ul class="trabajo-tecnologies">
+                            <li class="trabajo-tecnologies-item">Sublime Text</li>
+                            <li class="trabajo-tecnologies-item">Adobe Photoshop</li>
+                            <li class="trabajo-tecnologies-item">Wordpress</li>                           
+                        </ul> 
+                        <h3 class="trabajo-subtitle">Metodología de trabajo</h3>
+                        <p class="trabajo-description">Freelance</p>                       
                     </li>
-                    <li>
-                        <h2>Titulo del trabajo</h2>
-                        <img src="#" alt="#">
-                        <h3>Tecnologías usadas</h3>
-                        <ul>
-                            <li>HTML 5</li>
-                            <li>CSS 3</li>
-                            <li>JavaScript</li>
+                    <li class="trabajo">
+                        <h2 class="trabajo-title"><span class="trabajo-client">El País</span> | <a class="trabajo-link" href="https://elpais.com/especiales/2013/desahucios/" title="Visitar la web">Especial Deshaucios</a></h2>
+                        <a href="https://elpais.com/especiales/2013/desahucios/" title="ir a la web"><img class="trabajo-img" src="v8.0/img/trabajos/desahucios.jpg" alt="Pantallazo del proyecto Deshaucios"></a>
+                        <p class="trabajo-description">Maquetación del especial Deshaucios para El País, en el que se cuenta la historia de los deshaucios después de que estallara la burbuja inmobiliaria.</p>
+                        <p class="trabajo-description">Cabe destacar de este proyecto, que <a href="https://elpais.com/sociedad/2014/05/22/actualidad/1400769789_393754.html">fue galardonado con un premio Ortega y Gasset</a> en la categoría de periodismo digital.</p>
+                        <h3 class="trabajo-subtitle">Funciones</h3>
+                        <p class="trabajo-description">Maquetación web</p>
+                        <h3 class="trabajo-subtitle">Tecnologías usadas</h3>
+                        <ul class="trabajo-tecnologies">
+                            <li class="trabajo-tecnologies-item">HTML 5</li>
+                            <li class="trabajo-tecnologies-item">CSS 3</li>
+                            <li class="trabajo-tecnologies-item">JavaScript</li>                             
                         </ul>
-                        <p>Lorem ipsum dolor amet Lorem ipsum dolor ametLorem ipsum dolor amet Lorem ipsum dolor amet Lorem ipsum dolor ametLorem ipsum dolor amet.</p>
+                        <h3 class="trabajo-subtitle">Herramientas usadas</h3>
+                        <ul class="trabajo-tecnologies">
+                            <li class="trabajo-tecnologies-item">Sublime Text</li>
+                            <li class="trabajo-tecnologies-item">Adobe Photoshop</li>                                                                                
+                        </ul>                                           
                     </li>
-                    <li>
-                        <h2>Titulo del trabajo</h2>
-                        <img src="#" alt="#">
-                        <h3>Tecnologías usadas</h3>
-                        <ul>
-                            <li>HTML 5</li>
-                            <li>CSS 3</li>
-                            <li>JavaScript</li>
+                    <li class="trabajo">
+                        <h2 class="trabajo-title"><span class="trabajo-client">El País</span> | <a class="trabajo-link" href="https://elpais.com/especiales/2013/wagner/" title="Visitar la web">Especial Wagner</a></h2>
+                        <a href="https://elpais.com/especiales/2013/wagner/" title="ir a la web"><img class="trabajo-img" src="v8.0/img/trabajos/wagner.jpg" alt="Pantallazo del proyecto Wagner"></a>
+                        <p class="trabajo-description">Maquetación del especial Wagner para El País, en conmemoración a su 200 aniversario.</p>
+                        <h3 class="trabajo-subtitle">Funciones</h3>
+                        <p class="trabajo-description">Maquetación web</p>
+                        <h3 class="trabajo-subtitle">Tecnologías usadas</h3>
+                        <ul class="trabajo-tecnologies">
+                            <li class="trabajo-tecnologies-item">HTML 5</li>
+                            <li class="trabajo-tecnologies-item">CSS 3</li>
+                            <li class="trabajo-tecnologies-item">JavaScript</li>
+                            <li class="trabajo-tecnologies-item">jQuery</li>                              
                         </ul>
-                        <p>Lorem ipsum dolor amet Lorem ipsum dolor ametLorem ipsum dolor amet Lorem ipsum dolor amet Lorem ipsum dolor ametLorem ipsum dolor amet.</p>
+                        <h3 class="trabajo-subtitle">Herramientas usadas</h3>
+                        <ul class="trabajo-tecnologies">
+                            <li class="trabajo-tecnologies-item">Sublime Text</li>
+                            <li class="trabajo-tecnologies-item">Adobe Photoshop</li>                                                                                
+                        </ul>                                           
                     </li>
-                    <li>
-                        <h2>Titulo del trabajo</h2>
-                        <img src="#" alt="#">
-                        <h3>Tecnologías usadas</h3>
-                        <ul>
-                            <li>HTML 5</li>
-                            <li>CSS 3</li>
-                            <li>JavaScript</li>
+                    <li class="trabajo">
+                        <h2 class="trabajo-title"><span class="trabajo-client">El País</span> | <a class="trabajo-link" href="https://elpais.com/elpais/blogs.html" title="Visitar la web">Blogs El País</a></h2>
+                        <a href="https://elpais.com/elpais/blogs.html" title="ir a la web"><img class="trabajo-img" src="v8.0/img/trabajos/blogs.jpg" alt="Pantallazo del proyecto Blogs"></a>
+                        <p class="trabajo-description">Maquetación web de los blogs de El País a través de la herramienta para creación de blogs Typepad.</p>
+                        <p class="trabajo-description"><a href="" title="ir al blog"></a></p>
+                        <h3 class="trabajo-subtitle">Funciones</h3>
+                        <p class="trabajo-description">Maquetación web</p>
+                        <h3 class="trabajo-subtitle">Tecnologías usadas</h3>
+                        <ul class="trabajo-tecnologies">
+                            <li class="trabajo-tecnologies-item">HTML</li>
+                            <li class="trabajo-tecnologies-item">CSS</li>                                                      
                         </ul>
-                        <p>Lorem ipsum dolor amet Lorem ipsum dolor ametLorem ipsum dolor amet Lorem ipsum dolor amet Lorem ipsum dolor ametLorem ipsum dolor amet.</p>
+                        <h3 class="trabajo-subtitle">Herramientas usadas</h3>
+                        <ul class="trabajo-tecnologies">
+                            <li class="trabajo-tecnologies-item">Sublime Text</li>
+                            <li class="trabajo-tecnologies-item">Adobe Photoshop</li> 
+                            <li class="trabajo-tecnologies-item">Typepad</li>                                                                                 
+                        </ul>                                           
                     </li>
                 </ul>
-            </header>
+            </div>
         </section>
     </main>
 </body>
